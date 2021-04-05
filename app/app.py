@@ -10,7 +10,7 @@ class Core:
         """ This function cleans the folder """
         try:
             for fileName in os.listdir(path):
-                fileNamePath = os.path.join(path + "\\", fileName)
+                fileNamePath = os.path.join(path + "//", fileName)
                 if os.path.isfile(fileNamePath):
                     os.unlink(fileNamePath)
                 else:
