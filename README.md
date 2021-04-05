@@ -1,5 +1,6 @@
 # Folder Cleaner Script
- 
+ [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
 ### This script allows you to clean up a directory. The script expects the directory path as an argument. 
 
 **WARNING** : The script will clean all the contents of the directory without any verification, make sure that what you are going to clean is not important data.
