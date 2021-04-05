@@ -12,6 +12,6 @@ If you want to automate the script in Windows, you must create a `.bat` file tha
 ### *Mac OS X / Linux*
 If you want to automate the script in OSX or Linux, you must create a **cron job**, see here [Schedule a Python Script using Cron Job](https://gavinwiener.medium.com/how-to-schedule-a-python-script-cron-job-dea6cbf69f4e)
 ## How to execute the script ?
-`python3 app.py --path`
+`python3 app.py path`
 ### Command line arguments :
 * **path** - *directory path you want to clean*
