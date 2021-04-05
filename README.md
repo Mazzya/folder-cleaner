@@ -6,7 +6,7 @@
 
 **WARNING** : The script will clean all the contents of the directory without any verification, make sure that what you are going to clean is not important data.
 
-## What is the purpose of this script? ?
+## What is the purpose of this script ?
 The goal is to automate the script to clean the folders every x times, for example a registry folder that needs to be cleaned every day because it takes up a lot of space.
 ## What is the correct way to use this script ?
 ### *Windows* 
