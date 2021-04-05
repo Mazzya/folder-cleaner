@@ -15,6 +15,7 @@ class Core:
                     os.unlink(fileNamePath)
                 else:
                     shutil.rmtree(fileNamePath)
+            print("Folder cleaned")
         except FileNotFoundError:
             print("The specified path could not be found")
 
