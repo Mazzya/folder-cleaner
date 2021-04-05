@@ -1,4 +1,4 @@
-# Folder Cleaner
+# Folder Cleaner Script
  
 ### This script allows you to clean up a directory. The script expects the directory path as an argument. 
 
