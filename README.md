@@ -1,8 +1,5 @@
 # Folder Cleaner Script
- [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
- [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Mazzya/)<br>
-[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
-
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg?style=for-the-badge)](https://www.python.org/) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://github.com/Mazzya/image-resizer/blob/main/CHANGELOG.md) ![GitHub](https://img.shields.io/github/license/mazzya/folder-cleaner?style=for-the-badge)
 ### This script allows you to clean up a directory. The script expects the directory path as an argument. 
 
 **WARNING** : The script will clean all the contents of the directory without any verification, make sure that what you are going to clean is not important data.
