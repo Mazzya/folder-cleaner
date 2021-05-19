@@ -11,18 +11,17 @@ args = parser.parse_args()
 class Core:
     def __init__(self, path):
         """ Constructor """
-        self.cleanFolder(path)
+        self.clean_folder(path)
     
-    def cleanFolder(self, path):
+    def clean_folder(self, path):
         """ This function cleans the folder """
         try:
-            for fileName in os.listdir(path):
-                fileNamePath = os.path.join(path + "//", fileName)
-                if os.path.isfile(fileNamePath):
-                    os.unlink(fileNamePath)
-                    print(f"File: {fileName} cleaned")
+            for file_name in os.listdir(path):
+                file_name_path = os.path.join(path + "//", file_name)
+                if os.path.isfile(file_name_path):
+                    os.unlink(file_name_path)
                 else:
-                    shutil.rmtree(fileNamePath)
+                    shutil.rmtree(file_name_path)
             print("Folder cleaned successfully")
         except FileNotFoundError:
             print("The specified path could not be found")
