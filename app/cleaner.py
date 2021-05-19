@@ -1,27 +1,30 @@
-import sys, os, shutil
+import sys
+import os
+import shutil
+import argparse
+
 
 class Core:
     def __init__(self, path):
         """ Constructor """
-        super().__init__()
-        self.cleanFolder(path)
+        self.clean_folder(path)
     
-    def cleanFolder(self, path):
+    def clean_folder(self, path):
         """ This function cleans the folder """
         try:
-            for fileName in os.listdir(path):
-                fileNamePath = os.path.join(path + "//", fileName)
-                if os.path.isfile(fileNamePath):
-                    os.unlink(fileNamePath)
+            for file_name in os.listdir(path):
+                file_name_path = os.path.join(path + "//", file_name)
+                if os.path.isfile(file_name_path):
+                    os.unlink(file_name_path)
                 else:
-                    shutil.rmtree(fileNamePath)
-            print("Folder cleaned")
+                    shutil.rmtree(file_name_path)
+            print("Folder cleaned successfully")
         except FileNotFoundError:
             print("The specified path could not be found")
 
 if __name__ == "__main__":
-    if len(sys.argv) == 2:
-        a = Core(sys.argv[1])
-    else:
-        print("Remember that you can only enter one argument and it must be a valid directory")
+    parser = argparse.ArgumentParser(description="Clean folders quickly")
+    parser.add_argument('-p', '--path', type=str, metavar='', required=True, help="Folder path to clean")
+    args = parser.parse_args()
+    cleaner = Core(args.path)
     
