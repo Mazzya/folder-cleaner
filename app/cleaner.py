@@ -3,10 +3,6 @@ import os
 import shutil
 import argparse
 
-parser = argparse.ArgumentParser(description="Clean folders quickly")
-parser.add_argument('-p', '--path', type=str, metavar='', required=True, help="Folder path to clean")
-args = parser.parse_args()
-
 
 class Core:
     def __init__(self, path):
@@ -27,5 +23,8 @@ class Core:
             print("The specified path could not be found")
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Clean folders quickly")
+    parser.add_argument('-p', '--path', type=str, metavar='', required=True, help="Folder path to clean")
+    args = parser.parse_args()
     cleaner = Core(args.path)
     
