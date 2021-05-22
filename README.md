@@ -21,5 +21,5 @@ options arguments :
 ```
 ## Example
 ```
-> python cleaner.py -p D:\User\Documents\logs
+$ python cleaner.py -p D:\User\Documents\logs
 ```
